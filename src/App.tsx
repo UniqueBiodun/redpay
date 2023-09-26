@@ -6,7 +6,7 @@ function App() {
 					Welcome to the Redpay project
 				</h2>
 				<p className="text-2xl font-medium">
-					We will do great stuff here, watch out!
+					We will do great stuff here, watch out!!!
 				</p>
 			</div>
 		</>
