@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage1 from "../../assets/images/hero-image-1.png";
 import { Button } from "@material-tailwind/react";
-import Typed from "react-typed";
+import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection: React.FC = () => {
 	return (
@@ -10,13 +10,16 @@ const HeroSection: React.FC = () => {
 				<div className="w-full">
 					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-6xl 2xl:leading-[80px] w-full">
 						Experience the{" "}
-						<Typed
-							strings={["future", "ease", "beauty"]}
-							typeSpeed={120}
-							backSpeed={110}
-							loop
-							className="text-primary"
-						/>
+						<span className="text-primary">
+							<Typewriter
+								words={["future", "ease", "beauty"]}
+								typeSpeed={150}
+								deleteSpeed={120}
+								delaySpeed={1000}
+								loop={0}
+							/>
+							<Cursor cursorBlinking={true} />
+						</span>
 						<br />
 						of payments with us!
 					</p>
