@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
 							</Button>
 						</div>
 					</div>
-					<div className="xl:hidden block">Close Icon</div>
+					{/* <div className="xl:hidden block">Close Icon</div> */}
 				</div>
 			</nav>
 		</>
