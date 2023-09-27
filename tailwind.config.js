@@ -40,6 +40,7 @@ module.exports = withMT({
 		},
 		backgroundImage: {
 			hero: "url('/src/assets/icons/hero-bg.png')",
+			prefooter: "url('/src/assets/images/prefooter-bg.svg')",
 			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 		},
 	},
