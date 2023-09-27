@@ -15,31 +15,30 @@ module.exports = withMT({
 		},
 		extend: {
 			colors: {
-				primary: "#530E25",
-				sec: {
-					100: "#190009",
-					200: "#787878",
-					300: "#2F2F2F",
-					400: "#151515",
+				primary: "#E71615",
+				secondary: {
+					100: "#121212",
+					200: "#fff",
 				},
 			},
 		},
 
 		fontFamily: {
-			noto: ["Noto Sans", "sans-serif"],
+			lato: ["Lato", "sans-serif"],
 		},
 
 		container: {
 			padding: {
 				DEFAULT: "1rem",
 				sm: "2rem",
-				lg: "2rem",
-				xl: "2rem",
-				"2xl": "5rem",
+				lg: "6.25rem",
+				xl: "6.25rem",
+				"2xl": "6rem",
 			},
 			center: true,
 		},
 		backgroundImage: {
+			hero: "url('/src/assets/icons/hero-bg.png')",
 			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 		},
 	},

@@ -1,14 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./views/containers/navbar/navbar";
+import Home from "./views/pages/home";
+import Footer from "./views/containers/footer/footer";
+
 function App() {
 	return (
 		<>
-			<div className="flex flex-col justify-center items-center min-h-screen">
-				<h2 className="text-red-400 text-4xl font-semibold">
-					Welcome to the Redpay project
-				</h2>
-				<p className="text-2xl font-medium">
-					We will do great stuff here, watch out!!!
-				</p>
-			</div>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="*" element={""} />
+			</Routes>
+			<Footer />
 		</>
 	);
 }
