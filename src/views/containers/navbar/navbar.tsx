@@ -11,7 +11,7 @@ const NavBar = () => {
 	const [color, setColor] = useState(false);
 
 	const changeColor = () => {
-		window.scrollY >= 30 ? setColor(true) : setColor(false);
+		window.scrollY >= 10 ? setColor(true) : setColor(false);
 	};
 
 	window.addEventListener("scroll", changeColor);
@@ -24,38 +24,32 @@ const NavBar = () => {
 	}, []);
 
 	const navList = (
-		<div className="text-white font-lightText text-lg mb-4 mt-2 flex flex-col gap-20 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-20">
-			<div className="text-base mx-10 2xl:mx-36 flex flex-row items-center p-2 gap-6 2xl:gap-10 text-secondary-100 font-medium">
-				{/* Menu links here */}
-				{navlinks.map((link: any, index: number) => (
-					<ul key={index} className="list-none text-center">
-						<li>
-							<NavLink to={link.url}>
-								{link.title === "FAQs" ? (
-									<span className="flex items-center">
-										{link.title} <img src={DropIcon} />
-									</span>
-								) : (
-									link.title // Render the title only for other links
-								)}
-							</NavLink>
-						</li>
-					</ul>
-				))}
-			</div>
+		<div className="text-base mx-10 2xl:mx-36 flex flex-row items-center p-2 gap-6 2xl:gap-10 text-secondary-100 font-medium">
+			{/* Menu links here */}
+			{navlinks.map((link: any, index: number) => (
+				<ul key={index} className="list-none text-center">
+					<li>
+						<NavLink to={link.url}>
+							{link.title === "FAQs" ? (
+								<span className="flex items-center">
+									{link.title} <img src={DropIcon} />
+								</span>
+							) : (
+								link.title // Render the title only for other links
+							)}
+						</NavLink>
+					</li>
+				</ul>
+			))}
 		</div>
 	);
 
-	const customShadowStyle = {
-		boxShadow:
-			"0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)",
-	};
-
 	return (
 		<Navbar
-			style={color ? customShadowStyle : { boxShadow: "none" }}
-			className={`h-20 py-3 px-0 mx-0 fixed z-10 rounded-none w-full max-w-none border-0 ${
-				color ? "backdrop-filter" : "bg-transparent backdrop-filter-none"
+			className={`h-20 py-3 px-0 mx-0 fixed z-10 rounded-none w-full max-w-none border-0 shadow-none backdrop-filter-none ${
+				color
+					? "border border-[rgba(240,242,243,0.6)] bg-white bg-opacity-70"
+					: "bg-transparent"
 			}
             `}
 		>
@@ -69,10 +63,10 @@ const NavBar = () => {
 				<div className="hidden lg:block">{navList}</div>
 
 				<div className="hidden lg:flex items-center gap-4">
-					<Button className="font-lato normal-case py-[14px] px-8 text-base font-medium bg-transparent text-primary shadow-none outline-0 border border-primary rounded">
+					<Button className="font-lato normal-case lg:py-[7px] lg:px-[4px] 2xl:py-[14px] 2xl:px-8 text-base font-medium bg-transparent text-primary shadow-none outline-0 border border-primary rounded">
 						Sign In
 					</Button>
-					<Button className="font-lato normal-case py-[14px] px-8 text-base font-medium shadow-none outline-0 bg-primary rounded text-secondary-200">
+					<Button className="font-lato normal-case 2xl:py-[14px] 2xl:px-8 text-base font-medium shadow-none outline-0 bg-primary rounded text-secondary-200">
 						Sign Up
 					</Button>
 				</div>
