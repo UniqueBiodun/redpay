@@ -5,8 +5,8 @@ import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection: React.FC = () => {
 	return (
-		<section className="relative min-h-[calc(100vh-80px)] container font-grotesk bg-hero bg-no-repeat bg-cover pt-20">
-			<div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+		<section className="relative min-h-[calc(100vh-80px)] font-grotesk bg-hero bg-no-repeat bg-cover pt-20">
+			<div className="container flex flex-col lg:flex-row justify-between items-center gap-8">
 				<div className="w-full">
 					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-6xl 2xl:leading-[80px] w-full md:w-[120%]">
 						Experience the{" "}

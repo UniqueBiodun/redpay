@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, MobileNav, Button } from "@material-tailwind/react";
+import { Navbar, Button, Collapse } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
 import RedTechLogo from "../../../assets/brand-logo/redpay-logo.svg";
 import { FiChevronDown } from "react-icons/fi";
@@ -81,7 +81,7 @@ const NavBar = () => {
 					{openNav ? <AiOutlineClose /> : <GiHamburgerMenu />}
 				</div>
 			</div>
-			<MobileNav open={openNav}>
+			<Collapse open={openNav}>
 				<div className="bg-hero bg-no-repeat bg-cover bg-center mx-auto h-[100vh] p-4">
 					<div className="pt-16">{navList}</div>
 					<div className="flex flex-col gap-16 pt-16">
@@ -105,7 +105,7 @@ const NavBar = () => {
 						</div>
 					</div>
 				</div>
-			</MobileNav>
+			</Collapse>
 		</Navbar>
 	);
 };
