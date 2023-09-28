@@ -14,7 +14,7 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 	secondDiv,
 }: TextImgContainerProps) => {
 	const [ref, inView] = useInView({
-		threshold: 0.2, // Percentage of element visible to trigger
+		threshold: 0.01, // Percentage of element visible to trigger
 	});
 
 	const animation = useAnimation();
@@ -22,7 +22,7 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 	useEffect(() => {
 		if (inView) {
 			animation.start({
-				x: "0%",
+				x: 0,
 				opacity: 1,
 				transition: {
 					type: "smooth",
@@ -40,7 +40,7 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 				},
 			});
 		}
-	}, [inView]);
+	}, [inView, animation]);
 
 	return (
 		<>

@@ -18,7 +18,7 @@ const Prefooter: React.FC = () => {
 				opacity: 1,
 				transition: {
 					type: "smooth",
-					duration: 2,
+					duration: 0.5,
 				},
 			});
 		}
