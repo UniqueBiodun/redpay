@@ -20,12 +20,13 @@ module.exports = withMT({
 					100: "#121212",
 					200: "#fff",
 					300: "#53555A",
+					400: "#1E1E1E",
 				},
 			},
 		},
 
 		fontFamily: {
-			lato: ["Lato", "sans-serif"],
+			grotesk: ["Space Grotesk", "sans-serif"],
 		},
 
 		container: {

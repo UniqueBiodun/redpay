@@ -5,10 +5,10 @@ import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection: React.FC = () => {
 	return (
-		<section className="relative min-h-[calc(100vh-80px)] container font-lato bg-hero bg-no-repeat bg-cover pt-20">
+		<section className="relative min-h-[calc(100vh-80px)] container font-grotesk bg-hero bg-no-repeat bg-cover pt-20">
 			<div className="flex flex-col lg:flex-row justify-between items-center gap-8">
 				<div className="w-full">
-					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-6xl 2xl:leading-[80px] w-full">
+					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-6xl 2xl:leading-[80px] w-full md:w-[120%]">
 						Experience the{" "}
 						<span className="text-primary">
 							<Typewriter
@@ -30,10 +30,10 @@ const HeroSection: React.FC = () => {
 						platforms for a smooth customer relationship.
 					</p>
 					<div>
-						<Button className="font-lato normal-case text-base font-medium shadow-none outline-0 bg-primary rounded text-secondary-200 hover:bg-opacity-80">
+						<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-primary rounded text-secondary-200 hover:bg-opacity-80">
 							Create an account
 						</Button>
-						<Button className="font-lato normal-case text-base font-medium shadow-none outline-0 bg-transparent text-primary hover:text-opacity-70 hover:bg-transparent hover:shadow-none">
+						<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-transparent text-primary hover:text-opacity-70 hover:bg-transparent hover:shadow-none">
 							Contact Sales
 						</Button>
 					</div>

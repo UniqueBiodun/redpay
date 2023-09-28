@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
 	return (
 		<>
-			<footer className="container h-2/4 py-6 md:py-[60px] text-secondary-100 text-base font-lato">
+			<footer className="container h-2/4 py-6 md:py-[60px] text-secondary-100 text-base font-grotesk">
 				<div className="flex flex-col gap-8 md:flex-row md:gap-[46px] lg:gap-[92px] justify-between">
 					<div className="flex flex-col gap-8 w-full md:w-[375px]">
 						<img className="w-[142px]" src={RedPayLogo} alt="redtech-logo" />
