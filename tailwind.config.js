@@ -15,12 +15,17 @@ module.exports = withMT({
 		},
 		extend: {
 			colors: {
-				primary: "#E71615",
+				primary: "#E21313",
 				secondary: {
-					100: "#121212",
+					100: "#1E1E1E",
 					200: "#fff",
 					300: "#53555A",
 					400: "#1E1E1E",
+					500: "#FAFAFA",
+					600: "#E21313",
+				},
+				tertiary: {
+					100: "#E1E5EA",
 				},
 			},
 		},
@@ -42,6 +47,7 @@ module.exports = withMT({
 		backgroundImage: {
 			hero: "url('/src/assets/icons/hero-bg.png')",
 			prefooter: "url('/src/assets/images/prefooter-bg.svg')",
+			quote: "url('/src/assets/icons/quote.svg')",
 			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 		},
 	},

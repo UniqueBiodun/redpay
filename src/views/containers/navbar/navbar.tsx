@@ -52,7 +52,7 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className={`h-20 py-3 px-0 mx-0 fixed z-10 font-grotesk rounded-none w-full max-w-none border-0 shadow-none backdrop-filter-none ${
+			className={`z-20 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none backdrop-filter-none ${
 				color ? "shadow-sm" : "bg-transparent"
 			}
             `}

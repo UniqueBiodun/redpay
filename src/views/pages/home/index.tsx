@@ -8,6 +8,7 @@ import FraudIcon from "../../../assets/icons/fraud-icon.svg";
 import TokenIcon from "../../../assets/icons/token-icon.svg";
 import ReportingIcon from "../../../assets/icons/reporting-icon.svg";
 import ReconciliationIcon from "../../../assets/icons/recon-icon.svg";
+import Testimonials from "./testimonials";
 
 const Home: React.FC = () => {
 	const pHeadingStyles = "text-[40px] font-semibold text-secondary-100";
@@ -16,8 +17,8 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<HeroSection />
-			<section className="container bg-[#FAFAFA] py-[22.5px] px-20 md:px-[160px] font-grotesk">
-				<div className="flex flex-col flex-wrap md:flex-row justify-between items-center">
+			<section className="w-full bg-[#FAFAFA] py-[22.5px] px-20 md:px-40 font-grotesk">
+				<div className="3xl:container flex flex-col flex-wrap md:flex-row justify-between items-center">
 					<div className="text-center">
 						<p className={`${pHeadingStyles}`}>99.9%</p>
 						<p className={`${pTitleStyles}`}>Successful transactions</p>
@@ -120,6 +121,7 @@ const Home: React.FC = () => {
 					</>
 				}
 			/>
+			<Testimonials />
 			<Prefooter />
 		</>
 	);
