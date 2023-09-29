@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeroImage1 from "../../assets/images/hero-image-1.png";
-import HeroImage2 from "../../assets/images/hero-image-2.png";
+
 import { Button } from "@material-tailwind/react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 

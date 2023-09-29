@@ -71,6 +71,7 @@ const Testimonials: React.FC = () => {
 		useTransform: true,
 		swipe: true,
 		beforeChange: (currentSlide: number, nextSlide: number) => {
+			console.log(currentSlide);
 			setActiveCard(nextSlide);
 		},
 	};
