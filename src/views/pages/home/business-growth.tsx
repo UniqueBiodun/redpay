@@ -18,7 +18,7 @@ const BusinessGrowth: React.FC = () => {
 							embraced the future of seamless & secure transactions.
 						</p>
 						<div>
-							<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-primary text-secondary-200 rounded hover:bg-opacity-80">
+							<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-secondary-200 text-primary rounded hover:bg-opacity-80">
 								Create an account
 							</Button>
 						</div>
