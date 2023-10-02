@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
-import { IoChevronForwardCircle, IoChevronBackCircle } from "react-icons/io5";
+import {
+	IoIosArrowDropleftCircle,
+	IoIosArrowDroprightCircle,
+} from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -112,12 +115,12 @@ const Testimonials: React.FC = () => {
 								/>
 							))}
 						</Slider>
-						<div className="w-[20%] mx-auto sm:w-[10%] flex justify-between items-center mt-4">
+						<div className="w-[10%] mx-auto sm:w-[7%] flex justify-between items-center mt-10">
 							<div className="text-primary cursor-pointer" onClick={prevSlide}>
-								<IoChevronBackCircle size={40} />
+								<IoIosArrowDropleftCircle size={40} />
 							</div>
 							<div className="text-primary cursor-pointer" onClick={nextSlide}>
-								<IoChevronForwardCircle size={40} />
+								<IoIosArrowDroprightCircle size={40} />
 							</div>
 						</div>
 					</div>

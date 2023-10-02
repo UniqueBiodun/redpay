@@ -26,6 +26,7 @@ module.exports = withMT({
 				},
 				tertiary: {
 					100: "#E1E5EA",
+					200: "#E1E1E1",
 				},
 			},
 		},
@@ -48,8 +49,25 @@ module.exports = withMT({
 			hero: "url('/src/assets/icons/hero-bg.png')",
 			prefooter: "url('/src/assets/images/prefooter-bg.svg')",
 			quote: "url('/src/assets/icons/quote.svg')",
+			sectionBg: "url('/src/assets/icons/section-bg.png')",
+			benefitBg: "url('/src/assets/icons/benefits-bg.png')",
+			"custom-gradient":
+				"linear-gradient(90deg, #E21313 0%, rgba(22, 22, 22, 0.40) 100%)",
 			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addUtilities }) {
+			const newUtilities = {
+				".scrollbar-hide::-webkit-scrollbar": {
+					display: "none",
+				},
+				".scrollbar-hide scrollbar-width": {
+					display: "none",
+				},
+			};
+
+			addUtilities(newUtilities);
+		},
+	],
 });
