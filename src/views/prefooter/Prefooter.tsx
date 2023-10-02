@@ -6,7 +6,7 @@ import PrefooterImage from "../../assets/images/prefooter-image.png";
 
 const Prefooter: React.FC = () => {
 	const [ref, inView] = useInView({
-		threshold: 0.2, // Percentage of element visible to trigger
+		threshold: 0.2,
 	});
 
 	const animation = useAnimation();
