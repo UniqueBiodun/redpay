@@ -15,6 +15,7 @@ import HeirsGeneral from "../../../assets/icons/heirs-general-logo.svg";
 // import Testimonials from "./testimonials";
 import BusinessGrowth from "./business-growth";
 import Benefits from "./benefits";
+import StepByStep from "./step-by-step";
 
 const Home: React.FC = () => {
 	return (
@@ -79,8 +80,8 @@ const Home: React.FC = () => {
 					</div>
 				</div>
 			</section>
-
 			<BusinessGrowth />
+			<StepByStep />
 			{/* <SubSection
 				firstDiv={
 					<>

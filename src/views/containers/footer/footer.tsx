@@ -15,11 +15,11 @@ const Footer: React.FC = () => {
 				<div className="flex flex-col gap-8 md:flex-row md:gap-[46px] lg:gap-[92px] justify-between">
 					<div className="flex flex-col gap-8 w-full md:w-[375px]">
 						<img className="w-[142px]" src={RedPayLogo} alt="redtech-logo" />
-						<p className="text-base font-normal">
+						{/* <p className="text-base font-normal">
 							Redtech is a payment gateway that focuses on shaping the backbone
 							of the nation by beginning with her citizens, thereby launching
 							our products that are ergonomic and at the same time eco-friendly.
-						</p>
+						</p> */}
 						<div className="flex gap-7">
 							<Link to="">
 								<img src={Youtubelogo} alt="youtube-logo" />
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 						</ul>
 					</div>
 					<div className="flex flex-col gap-6">
-						<p className="text-base font-semibold">Policy</p>
+						<p className="text-base font-semibold">Legal</p>
 						<ul className="flex flex-col gap-4">
 							<li>Warranty policy</li>
 							<li>Corporate policy</li>
