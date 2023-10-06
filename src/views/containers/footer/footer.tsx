@@ -4,23 +4,16 @@ import Twitterlogo from "../../../assets/icons/twitter-logo.svg";
 import Instagramlogo from "../../../assets/icons/instagram-logo.svg";
 import Youtubelogo from "../../../assets/icons/youtube-logo.svg";
 import Facebooklogo from "../../../assets/icons/facebook-logo.svg";
-import PhoneIcon from "../../../assets/icons/phone-icon.svg";
-import ChatIcon from "../../../assets/icons/chat-icon.svg";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
 	return (
 		<>
-			<footer className="container h-2/4 py-6 md:py-[60px] text-secondary-100 text-base font-grotesk">
-				<div className="flex flex-col gap-8 md:flex-row md:gap-[46px] lg:gap-[92px] justify-between">
-					<div className="flex flex-col gap-8 w-full md:w-[375px]">
+			<footer className="h-2/4 py-6 md:pt-10 text-secondary-100 text-base font-grotesk">
+				<div className="container flex flex-col md:flex-row justify-between pb-10">
+					<div className="flex flex-col gap-8 pl-[6.2rem]">
 						<img className="w-[142px]" src={RedPayLogo} alt="redtech-logo" />
-						{/* <p className="text-base font-normal">
-							Redtech is a payment gateway that focuses on shaping the backbone
-							of the nation by beginning with her citizens, thereby launching
-							our products that are ergonomic and at the same time eco-friendly.
-						</p> */}
-						<div className="flex gap-7">
+						<div className="flex gap-4">
 							<Link to="">
 								<img src={Youtubelogo} alt="youtube-logo" />
 							</Link>
@@ -35,43 +28,52 @@ const Footer: React.FC = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="flex flex-col gap-6">
-						<p className="text-base font-semibold">About</p>
-						<ul className="flex flex-col gap-4">
-							<li>Company</li>
-							<li>Press</li>
-							<li>Careers</li>
-							<li>Testimonials</li>
-						</ul>
+					<div className="flex flex-col pr-[6.2rem]">
+						<div>
+							<p>
+								A product of Redtech Limited, a subsidiary of Heirs Holdings
+							</p>
+						</div>
+						<div className="flex flex-row gap-[7.5rem] pt-14 pb-20">
+							<div className="flex flex-col gap-6">
+								<p className="text-base font-semibold">About</p>
+								<ul className="flex flex-col gap-4">
+									<li>Company</li>
+									<li>Features</li>
+									<li>Pricing</li>
+									<li>Developers</li>
+									<li>Redtech</li>
+								</ul>
+							</div>
+							<div className="flex flex-col gap-6">
+								<p className="text-base font-semibold">Legal</p>
+								<ul className="flex flex-col gap-4">
+									<li>Warranty policy</li>
+									<li>Corporate policy</li>
+								</ul>
+							</div>
+							<div className="flex flex-col gap-6">
+								<p className="text-base font-semibold">Support</p>
+								<ul className="flex flex-col gap-4">
+									<li>Contact Us</li>
+									<li>FAQs</li>
+									<li>API Documentation</li>
+								</ul>
+							</div>
+						</div>
+						<div className="flex flex-col gap-6">
+							<p className="text-base font-semibold">Connect with us</p>
+							<ul className="flex flex-col gap-4">
+								<li className="w-[50%]">
+									22B, Idowu Taylor Street, Victoria Island, Lagos, Nigeria.
+								</li>
+								<li>Phone: +234-913-933-7298</li>
+							</ul>
+						</div>
 					</div>
-					<div className="flex flex-col gap-6">
-						<p className="text-base font-semibold">Legal</p>
-						<ul className="flex flex-col gap-4">
-							<li>Warranty policy</li>
-							<li>Corporate policy</li>
-							<li>Data protection </li>
-							<li>Terms and conditions</li>
-						</ul>
-					</div>
-					<div className="flex flex-col gap-6">
-						<p className="text-base font-semibold">Support</p>
-						<ul className="flex flex-col gap-4">
-							<li>5, Danjuma street, Ikeja GRA, Lagos, Nigeria.</li>
-							<li>Mondays-Fridays: 8:00am to 5:00pm</li>
-							<li>
-								<span className="flex items-center gap-2">
-									<img src={PhoneIcon} alt="phone-icon" />
-									<span className="underline">0908 720 1967</span>
-								</span>
-							</li>
-							<li>
-								<span className="flex items-center gap-2">
-									<img src={ChatIcon} alt="chat-icon" />
-									<span className="underline">0908 720 1966</span>
-								</span>
-							</li>
-						</ul>
-					</div>
+				</div>
+				<div className="text-center border-t border-tertiary-300 text-base font-normal pt-10">
+					(c) 2023 Redtech Ltd. All rights reserved
 				</div>
 			</footer>
 		</>

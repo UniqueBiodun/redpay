@@ -27,6 +27,7 @@ module.exports = withMT({
 				tertiary: {
 					100: "#E1E5EA",
 					200: "#E1E1E1",
+					300: "#D6D6D6",
 				},
 			},
 		},
@@ -49,6 +50,7 @@ module.exports = withMT({
 			hero: "url('/src/assets/icons/hero-bg.png')",
 			prefooter: "url('/src/assets/images/prefooter-bg.svg')",
 			quote: "url('/src/assets/icons/quote.svg')",
+			heroRight: "url('/src/assets/images/dashed-bg.png')",
 			sectionBg: "url('/src/assets/icons/section-bg.png')",
 			benefitBg: "url('/src/assets/icons/benefits-bg.png')",
 			"custom-gradient":
