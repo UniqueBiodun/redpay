@@ -11,20 +11,36 @@ const Footer: React.FC = () => {
 		<>
 			<footer className="h-2/4 py-6 md:pt-10 text-secondary-100 text-base font-grotesk">
 				<div className="container flex flex-col md:flex-row justify-between pb-10">
-					<div className="flex flex-col gap-8 pl-[6.2rem]">
-						<img className="w-[142px]" src={RedPayLogo} alt="redtech-logo" />
+					<div className="flex flex-col gap-8 md:pl-[6.2rem]">
+						<img
+							className="w-[142px]"
+							src={RedPayLogo}
+							alt="redtech-logo"
+						/>
 						<div className="flex gap-4">
 							<Link to="">
-								<img src={Youtubelogo} alt="youtube-logo" />
+								<img
+									src={Youtubelogo}
+									alt="youtube-logo"
+								/>
 							</Link>
 							<Link to="">
-								<img src={Twitterlogo} alt="twitter-logo" />
+								<img
+									src={Twitterlogo}
+									alt="twitter-logo"
+								/>
 							</Link>
 							<Link to="">
-								<img src={Instagramlogo} alt="instagram-logo" />
+								<img
+									src={Instagramlogo}
+									alt="instagram-logo"
+								/>
 							</Link>
 							<Link to="">
-								<img src={Facebooklogo} alt="facebook-logo" />
+								<img
+									src={Facebooklogo}
+									alt="facebook-logo"
+								/>
 							</Link>
 						</div>
 					</div>
@@ -34,7 +50,7 @@ const Footer: React.FC = () => {
 								A product of Redtech Limited, a subsidiary of Heirs Holdings
 							</p>
 						</div>
-						<div className="flex flex-row gap-[7.5rem] pt-14 pb-20">
+						<div className="flex flex-row gap-[7.5rem] flex-wrap pt-14 pb-20">
 							<div className="flex flex-col gap-6">
 								<p className="text-base font-semibold">About</p>
 								<ul className="flex flex-col gap-4">

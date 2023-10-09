@@ -29,9 +29,15 @@ const NavBar = () => {
 		<div className="text-base flex flex-row items-center p-2 lg:gap-4 2xl:gap-10 text-secondary-100 font-medium">
 			{/* Menu links here */}
 			{navlinks.map((link: any, index: number) => (
-				<ul key={index} className="list-none text-center">
+				<ul
+					key={index}
+					className="list-none text-center"
+				>
 					<li>
-						<NavLink className="hover:text-primary" to={link.url}>
+						<NavLink
+							className="hover:text-primary"
+							to={link.url}
+						>
 							{link.title === "FAQs" ? (
 								<span className="flex items-center">
 									{link.title} <FiChevronDown />
@@ -52,7 +58,7 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className={`z-20 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none backdrop-filter-none ${
+			className={`z-30 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none backdrop-filter-none ${
 				color ? "shadow-sm" : "bg-transparent"
 			}
             `}
@@ -60,7 +66,10 @@ const NavBar = () => {
 			<div className="container flex items-center justify-between">
 				<div>
 					<Link to="/">
-						<img src={RedTechLogo} alt="logo" />
+						<img
+							src={RedTechLogo}
+							alt="logo"
+						/>
 					</Link>
 				</div>
 
