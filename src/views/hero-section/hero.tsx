@@ -31,10 +31,10 @@ const HeroSection: React.FC = () => {
 	}, []);
 
 	return (
-		<section className="relative min-h-screen font-grotesk bg-hero bg-no-repeat bg-cover pt-20">
-			<div className="container flex flex-col lg:flex-row justify-between items-center gap-8 mt-10">
+		<section className="relative flex items-center min-h-screen font-grotesk bg-hero bg-no-repeat bg-cover border-b-2 border-b-[#F2F4F6]">
+			<div className="container flex flex-col lg:flex-row justify-between items-center gap-8 pt-20 lg:pt-0">
 				<div className="w-full h-full">
-					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-6xl 2xl:leading-[80px] w-full">
+					<p className="text-secondary-100 font-medium text-3xl md:text-4xl md:leading-[50px] 2xl:text-[4rem] 2xl:leading-[80px] w-full">
 						<span className="text-primary">
 							<Typewriter
 								words={["Streamline", "Optimize", "Simplify"]}
@@ -62,16 +62,19 @@ const HeroSection: React.FC = () => {
 						</Button>
 					</div>
 				</div>
-				<div className="w-full h-full bg-heroRight bg-no-repeat bg-contain p-5">
-					<animated.div
-						style={props}
-						className="max-w-full"
-					>
-						<img
-							src={images[index]}
-							alt="hero-image"
-						/>
-					</animated.div>
+				<div className="w-full flex lg:justify-end">
+					<div className="w-[90%] h-full bg-heroRight bg-no-repeat bg-contain p-5">
+						<animated.div
+							style={props}
+							className="w-full"
+						>
+							<img
+								src={images[index]}
+								alt="hero-image"
+								className="transition ease-in duration-200"
+							/>
+						</animated.div>
+					</div>
 				</div>
 			</div>
 		</section>

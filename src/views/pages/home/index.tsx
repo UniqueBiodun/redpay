@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import HeroSection from "../../hero-section/hero";
 import Prefooter from "../../prefooter/Prefooter";
 import SubSection from "../../components/security-brand.tsx/subsection";
@@ -12,6 +13,9 @@ import Tenoil from "../../../assets/icons/tenoil-logo.svg";
 import AfricaPrudence from "../../../assets/icons/africa-prudential.svg";
 import Uba from "../../../assets/icons/uba-logo.svg";
 import HeirsGeneral from "../../../assets/icons/heirs-general-logo.svg";
+import Verve from "../../../assets/icons/verve-logo.png";
+import Mastercard from "../../../assets/icons/mastercard-logo.png";
+import Visa from "../../../assets/icons/visa-logo.png";
 // import Testimonials from "./testimonials";
 import BusinessGrowth from "./business-growth";
 import Benefits from "./benefits";
@@ -27,29 +31,47 @@ const Home: React.FC = () => {
 						<div className="flex flex-row gap-8">
 							<div className="flex flex-col gap-6">
 								<div className="flex gap-2 items-center">
-									<img src={LockIcon} alt="lock-icon" />
+									<img
+										src={LockIcon}
+										alt="lock-icon"
+									/>
 									<p>PCI -DSS Certified</p>
 								</div>
 								<div className="flex gap-2 items-center">
-									<img src={MultiFactorIcon} alt="mfa-icon" />
+									<img
+										src={MultiFactorIcon}
+										alt="mfa-icon"
+									/>
 									<p>Multifactor authentication</p>
 								</div>
 								<div className="flex gap-2 items-center">
-									<img src={FraudIcon} alt="fraud-icon" />
+									<img
+										src={FraudIcon}
+										alt="fraud-icon"
+									/>
 									<p>Advanced fraud monitoring</p>
 								</div>
 							</div>
 							<div className="flex flex-col gap-6">
 								<div className="flex gap-2 items-center">
-									<img src={TokenIcon} alt="token-icon" />
+									<img
+										src={TokenIcon}
+										alt="token-icon"
+									/>
 									<p>Tokenization</p>
 								</div>
 								<div className="flex gap-2 items-center">
-									<img src={ReportingIcon} alt="report-icon" />
+									<img
+										src={ReportingIcon}
+										alt="report-icon"
+									/>
 									<p>Detailed reporting</p>
 								</div>
 								<div className="flex gap-2 items-center">
-									<img src={ReconciliationIcon} alt="recon-icon" />
+									<img
+										src={ReconciliationIcon}
+										alt="recon-icon"
+									/>
 									<p>Reconciliation & Audit</p>
 								</div>
 							</div>
@@ -64,20 +86,44 @@ const Home: React.FC = () => {
 				}
 			/>
 			<Benefits />
-			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-10 px-10 md:px-40 font-grotesk">
-				<div className="3xl:container flex flex-col gap-6 md:gap-0 flex-wrap md:flex-row justify-between items-center">
-					<div className="text-center">
-						<img src={Uba} alt="uba-logo" />
-					</div>
-					<div className="text-center">
-						<img src={HeirsGeneral} alt="uba-logo" />
-					</div>
-					<div className="text-center">
-						<img src={Tenoil} alt="uba-logo" />
-					</div>
-					<div className="text-center">
-						<img src={AfricaPrudence} alt="uba-logo" />
-					</div>
+			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-[3.375rem] font-grotesk">
+				<div className="container px-4 md:px-[10rem]">
+					<Marquee
+						pauseOnHover={true}
+						speed={80}
+					>
+						<div className="flex gap-10 md:gap-[8.875rem]">
+							<img
+								src={Uba}
+								alt="uba-logo"
+							/>
+							<img
+								src={HeirsGeneral}
+								alt="heirs-logo"
+							/>
+							<img
+								src={Tenoil}
+								alt="tenoil-logo"
+							/>
+							<img
+								src={AfricaPrudence}
+								alt="africaprudence-logo"
+							/>
+							<img
+								src={Verve}
+								alt="verve-logo"
+							/>
+							<img
+								src={Mastercard}
+								alt="mastercard-logo"
+							/>
+							<img
+								src={Visa}
+								alt="visa-logo"
+								className="pr-10 md:pr-[8.875rem]"
+							/>
+						</div>
+					</Marquee>
 				</div>
 			</section>
 			<BusinessGrowth />

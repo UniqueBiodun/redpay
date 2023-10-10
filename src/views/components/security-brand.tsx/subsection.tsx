@@ -15,49 +15,20 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 	firstDiv,
 	secondDiv,
 }: TextImgContainerProps) => {
-	// const [ref, inView] = useInView({
-	// 	threshold: 0.2, // Percentage of element visible to trigger
-	// });
-
-	// const animation = useAnimation();
-
-	// useEffect(() => {
-	// 	if (inView) {
-	// 		animation.start({
-	// 			x: 0,
-	// 			opacity: 1,
-	// 			transition: {
-	// 				type: "smooth",
-	// 				duration: 2,
-	// 			},
-	// 		});
-	// 	}
-	// 	if (!inView) {
-	// 		animation.start({
-	// 			x: "-100%",
-	// 			opacity: 0,
-	// 			transition: {
-	// 				type: "tween",
-	// 				duration: 3,
-	// 			},
-	// 		});
-	// 	}
-	// }, [inView, animation]);
-
 	useEffect(() => {
 		AOS.init({
-			duration: 1000, // Animation duration (in milliseconds)
+			duration: 2000, // Animation duration (in milliseconds)
 			once: false, // Only run the animation once
 		});
 	}, []);
-
+	// bg-secondary-200
 	return (
 		<>
 			<section
-				className={`min-h-[35vh] ${addStyle} py-10 font-grotesk bg-secondary-200 flex items-center`}
+				className={`min-h-[35vh] ${addStyle} py-10 font-grotesk flex items-center`}
 			>
 				<div
-					className={`container pl-0 h-full mx-auto flex flex-col-reverse lg:flex-row justify-between  gap-6`}
+					className={`pr-0 lg:pr-[6.25rem] h-full mx-auto flex flex-col-reverse lg:flex-row justify-between gap-6`}
 				>
 					{/* First Div */}
 					<div
@@ -68,8 +39,8 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 					</div>
 
 					{/* Second Div */}
-					<div className="w-full flex items-center">
-						<p className="text-3xl container sm:px-0 sm:mx-0 md:text-5xl font-semibold text-secondary-100 leading-[60px]">
+					<div className="w-[90%] mx-auto flex items-center">
+						<p className="w-full text-3xl sm:px-0 sm:mx-0 md:text-5xl font-semibold text-secondary-100 md:leading-[60px]">
 							{secondDiv}
 						</p>
 					</div>
