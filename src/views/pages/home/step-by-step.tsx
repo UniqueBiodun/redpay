@@ -6,8 +6,8 @@ const StepByStep: React.FC = () => {
 		<>
 			<section className="w-full flex min-h-[90vh] items-center font-grotesk bg-benefitBg bg-no-repeat bg-cover py-10">
 				<div className="container flex flex-col gap-10 text-center">
-					<div className="text-left w-[50%]">
-						<h3 className="text-sec-100 text-5xl font-medium">
+					<div className="text-left lg:w-[50%]">
+						<h3 className="text-sec-100 text-3xl lg:text-5xl font-medium">
 							Step-by-step <span className="text-primary">guide</span> to begin
 							your journey
 						</h3>

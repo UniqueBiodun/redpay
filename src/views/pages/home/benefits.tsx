@@ -65,7 +65,7 @@ const Benefits: React.FC = () => {
 
 	return (
 		<section className="w-full flex min-h-[90vh] items-center font-grotesk bg-benefitBg bg-no-repeat bg-cover">
-			<div className="3xl:container flex flex-col pl-[10.8rem] lg:flex-row justify-between items-center gap-16">
+			<div className="3xl:container px-4 lg:px-0 flex flex-col lg:pl-[10.8rem] lg:flex-row justify-between items-center gap-16">
 				<div
 					ref={containerRef}
 					className="w-full h-[680px] flex flex-col gap-64 py-64 overflow-auto scrollbar-hide"
@@ -252,7 +252,10 @@ const Benefits: React.FC = () => {
 					</div>
 				</div>
 				<div className="w-full h-full">
-					<img src={imageSrc} alt="" />
+					<img
+						src={imageSrc}
+						alt=""
+					/>
 				</div>
 			</div>
 		</section>

@@ -39,7 +39,7 @@ const StepsComp: React.FC<EventProps> = ({
 										}`}
 										onClick={() => onItemClick(index)}
 									>
-										<h1 className="text-sec-100 text-3xl font-medium pl-6">
+										<h1 className="text-sec-100 text-2xl lg:text-3xl font-medium pl-6">
 											{step.title}
 										</h1>
 										<p className="text-sec-200 text-base pl-6">{step.para}</p>
