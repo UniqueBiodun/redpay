@@ -20,7 +20,6 @@ import Visa from "../../../assets/icons/visa-logo.png";
 import BusinessGrowth from "./business-growth";
 import Benefits from "./benefits";
 import StepByStep from "./step-by-step";
-import BenefitsNew from "./benefits-new";
 
 const Home: React.FC = () => {
 	return (
