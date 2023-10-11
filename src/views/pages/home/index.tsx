@@ -20,6 +20,7 @@ import Visa from "../../../assets/icons/visa-logo.png";
 import BusinessGrowth from "./business-growth";
 import Benefits from "./benefits";
 import StepByStep from "./step-by-step";
+import BenefitsNew from "./benefits-new";
 
 const Home: React.FC = () => {
 	return (
@@ -28,7 +29,7 @@ const Home: React.FC = () => {
 			<SubSection
 				firstDiv={
 					<>
-						<div className="flex flex-row gap-8">
+						<div className="flex flex-row gap-3 lg:gap-8">
 							<div className="flex flex-col gap-6">
 								<div className="flex gap-2 items-center">
 									<img
@@ -85,7 +86,9 @@ const Home: React.FC = () => {
 					</>
 				}
 			/>
+			{/* <BenefitsNew /> */}
 			<Benefits />
+
 			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-[3.375rem] font-grotesk">
 				<div className="container px-4 md:px-[10rem]">
 					<Marquee

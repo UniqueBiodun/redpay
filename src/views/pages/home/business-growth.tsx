@@ -6,7 +6,7 @@ const BusinessGrowth: React.FC = () => {
 		<>
 			<section className="w-full bg-[#000] bg-sectionBg bg-center bg-cover bg-no-repeat h-2/4 text-secondary-100 text-base font-grotesk">
 				<div className="container flex justify-between items-center">
-					<div className="w-full text-left md:text-center py-10 md:py-[6rem] md:px-[20rem] flex flex-col gap-8">
+					<div className="w-full text-left md:text-center py-10 md:py-[6rem] md:px-[4rem] lg:px-[6rem] 2xl:px-[20rem] flex flex-col gap-8">
 						<p className="text-3xl md:text-5xl text-secondary-200 font-medium w-full">
 							For those who crave business growth 
 						</p>

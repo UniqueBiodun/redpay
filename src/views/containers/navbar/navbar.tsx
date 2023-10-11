@@ -60,7 +60,7 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className={`z-30 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none  ${
+			className={`z-10 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none  ${
 				color ? "shadow-sm !bg-white backdrop-filter-none" : "bg-transparent"
 			}
             `}
@@ -96,7 +96,7 @@ const NavBar = () => {
 
 			<MobileNav
 				open={openNav}
-				className={`min-h-screen bg-[#fff] mx-auto p-4`}
+				className={`h-screen bg-[#fff] mx-auto p-4`}
 			>
 				{navList}
 				<div className="flex flex-col gap-10 px-[5.25rem]">

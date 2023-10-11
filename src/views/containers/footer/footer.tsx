@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
 	return (
 		<>
 			<footer className="h-2/4 py-6 md:pt-10 text-secondary-100 text-base font-grotesk">
-				<div className="container flex flex-col md:flex-row justify-between pb-10">
+				<div className="container flex flex-col gap-16 2xl:gap-0 md:flex-row justify-between pb-10">
 					<div className="flex flex-col gap-8 md:pl-[6.2rem]">
 						<img
 							className="w-[142px]"
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="flex flex-col pr-[6.2rem]">
+					<div className="flex flex-col md:pr-[6.2rem]">
 						<div>
 							<p>
 								A product of Redtech Limited, a subsidiary of Heirs Holdings
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className="text-center border-t border-tertiary-300 text-base font-normal pt-10">
+				<div className="text-center border-t border-tertiary-300 text-sm sm:text-base font-normal pt-10">
 					(c) 2023 Redtech Ltd. All rights reserved
 				</div>
 			</footer>
