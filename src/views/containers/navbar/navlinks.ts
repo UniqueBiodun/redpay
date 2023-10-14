@@ -1,32 +1,32 @@
 export const navlinks = [
 	{
 		title: "Company",
-		url: "/company",
+		url: "#",
 		target: "",
 	},
 	{
 		title: "Partners",
-		url: "/partners",
+		url: "#",
 		target: "",
 	},
 	{
 		title: "Pricing",
-		url: "/pricing",
+		url: "#",
 		target: "",
 	},
 	{
 		title: "FAQs",
-		url: "/faqs",
+		url: "#",
 		target: "",
 	},
 	{
 		title: "Resources",
-		url: "/resources",
+		url: "#",
 		target: "",
 	},
 	{
 		title: "Support",
-		url: "/support",
+		url: "#",
 		target: "",
 	},
 ];

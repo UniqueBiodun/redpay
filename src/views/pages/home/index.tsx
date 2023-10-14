@@ -96,33 +96,39 @@ const Home: React.FC = () => {
 					>
 						<div className="flex gap-10 md:gap-[8.875rem]">
 							<img
+								className="w-[30%] md:w-full"
 								src={Uba}
 								alt="uba-logo"
 							/>
 							<img
+								className="w-[30%] md:w-full"
 								src={HeirsGeneral}
 								alt="heirs-logo"
 							/>
 							<img
+								className="w-[30%] md:w-full"
 								src={Tenoil}
 								alt="tenoil-logo"
 							/>
 							<img
+								className="w-[30%] md:w-full"
 								src={AfricaPrudence}
 								alt="africaprudence-logo"
 							/>
 							<img
+								className="w-[30%] md:w-full"
 								src={Verve}
 								alt="verve-logo"
 							/>
 							<img
+								className="w-[30%] md:w-full"
 								src={Mastercard}
 								alt="mastercard-logo"
 							/>
 							<img
 								src={Visa}
 								alt="visa-logo"
-								className="pr-10 md:pr-[8.875rem]"
+								className="w-[30%] md:w-full pr-10 md:pr-[8.875rem]"
 							/>
 						</div>
 					</Marquee>

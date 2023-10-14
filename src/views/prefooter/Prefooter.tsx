@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@material-tailwind/react";
 import PrefooterImage from "../../assets/images/prefooter-image.png";
+import { Link } from "react-router-dom";
 
 const Prefooter: React.FC = () => {
 	const [ref, inView] = useInView({
@@ -43,9 +44,11 @@ const Prefooter: React.FC = () => {
 							Empower your business for boundless opportunities!
 						</p>
 						<div>
-							<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-secondary-200 text-primary rounded hover:bg-opacity-80">
-								Create an account
-							</Button>
+							<Link to="https://merchant.portal.redpay.africa/signup">
+								<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-secondary-200 text-primary rounded hover:bg-opacity-80">
+									Create an account
+								</Button>
+							</Link>
 						</div>
 					</div>
 					<div className="w-full h-full pt-16 pr-16 flex justify-end items-end">

@@ -68,7 +68,7 @@ const Benefits: React.FC = () => {
 			<div className="3xl:container px-4 lg:px-0 flex flex-col lg:pl-[10.8rem] lg:flex-row justify-between items-center gap-16">
 				<div
 					ref={containerRef}
-					className="w-full h-[680px] flex flex-col gap-64 py-64 overflow-auto scrollbar-hide"
+					className="w-full h-[680px] flex flex-col gap-16 lg:gap-64 lg:py-64 overflow-auto scrollbar-hide"
 				>
 					<div className="w-full">
 						<p
@@ -90,7 +90,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 0 ? "active" : ""
@@ -120,7 +120,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 1 ? "active" : ""
@@ -150,7 +150,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 2 ? "active" : ""
@@ -180,7 +180,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 3 ? "active" : ""
@@ -210,7 +210,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 4 ? "active" : ""
@@ -240,7 +240,7 @@ const Benefits: React.FC = () => {
 							variety of payment options like cards, bank transfers, and digital
 							wallets.
 						</p>
-						<Link to="">
+						<Link to="#">
 							<span
 								className={`flex flex-row gap-2 items-center text-base text-primary ${
 									activeSection === 5 ? "active" : ""
@@ -251,7 +251,7 @@ const Benefits: React.FC = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="w-full h-full">
+				<div className="hidden lg:inline-block w-full h-full">
 					<img
 						src={imageSrc}
 						alt=""
