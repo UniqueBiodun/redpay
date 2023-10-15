@@ -106,19 +106,16 @@ const Benefits: React.FC = () => {
 								activeSection === 1 ? "active" : ""
 							}`}
 						>
-							Empower your <span className="text-primary">customers</span> with
-							versatile payment choices
+							Simplify your <span className="text-primary">finances</span>
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${
 								activeSection === 1 ? "active" : ""
 							}`}
 						>
-							Your customers deserve convenience, and our diverse payment
-							methods ensure they can shop, pay, and transact in the way that
-							suits them best. Make paying a breeze for them by offering a
-							variety of payment options like cards, bank transfers, and digital
-							wallets.
+							Free up resources with automated payments and manage payroll,
+							subscriptions, and invoices easily, allowing your team to focus on
+							what matters most.
 						</p>
 						<Link to="#">
 							<span
@@ -136,19 +133,18 @@ const Benefits: React.FC = () => {
 								activeSection === 2 ? "active" : ""
 							}`}
 						>
-							Empower your <span className="text-primary">customers</span> with
-							versatile payment choices
+							Elevate your customers’ experience with hassle-free{" "}
+							<span className="text-primary">payments</span>
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${
 								activeSection === 2 ? "active" : ""
 							}`}
 						>
-							Your customers deserve convenience, and our diverse payment
-							methods ensure they can shop, pay, and transact in the way that
-							suits them best. Make paying a breeze for them by offering a
-							variety of payment options like cards, bank transfers, and digital
-							wallets.
+							With T+1 settlement and a dedicated merchant dashboard offering
+							robust reporting, dispute resolution, and analytics tools, your
+							customers will enjoy a seamless journey and your business will
+							thrive.
 						</p>
 						<Link to="#">
 							<span
@@ -166,19 +162,19 @@ const Benefits: React.FC = () => {
 								activeSection === 3 ? "active" : ""
 							}`}
 						>
-							Empower your <span className="text-primary">customers</span> with
-							versatile payment choices
+							Unlock actionable <span className="text-primary">insights</span>{" "}
+							to fuel your growth
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${
 								activeSection === 3 ? "active" : ""
 							}`}
 						>
-							Your customers deserve convenience, and our diverse payment
-							methods ensure they can shop, pay, and transact in the way that
-							suits them best. Make paying a breeze for them by offering a
-							variety of payment options like cards, bank transfers, and digital
-							wallets.
+							Gain priceless insights into your business performance through
+							comprehensive reporting and analytics. Your growth journey is
+							powered by data. Put your customers' needs and preferences at the
+							heart of everything you do with informed decisions and fine-tuned
+							strategies.
 						</p>
 						<Link to="#">
 							<span
@@ -196,19 +192,17 @@ const Benefits: React.FC = () => {
 								activeSection === 4 ? "active" : ""
 							}`}
 						>
-							Empower your <span className="text-primary">customers</span> with
-							versatile payment choices
+							Expand your business with seamless{" "}
+							<span className="text-primary">integration</span>magic
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${
 								activeSection === 4 ? "active" : ""
 							}`}
 						>
-							Your customers deserve convenience, and our diverse payment
-							methods ensure they can shop, pay, and transact in the way that
-							suits them best. Make paying a breeze for them by offering a
-							variety of payment options like cards, bank transfers, and digital
-							wallets.
+							Enhance your adaptability and expand your reach by integrating our
+							payment system with PoS systems, e-commerce modules, and virtual
+							accounts, ensuring your customers' needs are met at every step.
 						</p>
 						<Link to="#">
 							<span
@@ -226,19 +220,20 @@ const Benefits: React.FC = () => {
 								activeSection === 5 ? "active" : ""
 							}`}
 						>
-							Empower your <span className="text-primary">customers</span> with
-							versatile payment choices
+							Integrate with a <span className="text-primary">smile</span>+
+							support
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${
 								activeSection === 5 ? "active" : ""
 							}`}
 						>
-							Your customers deserve convenience, and our diverse payment
-							methods ensure they can shop, pay, and transact in the way that
-							suits them best. Make paying a breeze for them by offering a
-							variety of payment options like cards, bank transfers, and digital
-							wallets.
+							Our API Documentation is here to simplify your journey, providing
+							clear guides. What's more, we're with you every step of the way,
+							ensuring a friendly and smooth integration process. But that's not
+							all. Redpay's 24/7 support system ensures that help is just a
+							message or call away, making your integration experience truly
+							exceptional.
 						</p>
 						<Link to="#">
 							<span
@@ -246,7 +241,7 @@ const Benefits: React.FC = () => {
 									activeSection === 5 ? "active" : ""
 								}`}
 							>
-								<span>Learn more</span> <HiOutlineArrowRight size={16} />
+								<span>Explore API Docs</span> <HiOutlineArrowRight size={16} />
 							</span>
 						</Link>
 					</div>
