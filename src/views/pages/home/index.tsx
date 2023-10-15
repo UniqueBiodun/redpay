@@ -28,7 +28,8 @@ const Home: React.FC = () => {
 			<SubSection
 				firstDiv={
 					<>
-						<div className="flex flex-row gap-3 lg:gap-8">
+						{/* flex flex-row */}
+						<div className="grid grid-cols-2 gap-3 lg:gap-6">
 							<div className="flex flex-col gap-6">
 								<div className="flex gap-2 items-center">
 									<img
@@ -88,47 +89,47 @@ const Home: React.FC = () => {
 			{/* <BenefitsNew /> */}
 			<Benefits />
 
-			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-[3.375rem] font-grotesk">
-				<div className="container px-4 md:px-[10rem]">
+			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-8 md:py-[3.375rem] font-grotesk">
+				<div className="container px-4 lg:px-[10rem]">
 					<Marquee
 						pauseOnHover={true}
 						speed={80}
 					>
-						<div className="flex gap-10 md:gap-[8.875rem]">
+						<div className="grid grid-cols-7 items-center md:gap-10">
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[40%]"
 								src={Uba}
 								alt="uba-logo"
 							/>
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[70%]"
 								src={HeirsGeneral}
 								alt="heirs-logo"
 							/>
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[40%]"
 								src={Tenoil}
 								alt="tenoil-logo"
 							/>
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[70%]"
 								src={AfricaPrudence}
 								alt="africaprudence-logo"
 							/>
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[40%]"
 								src={Verve}
 								alt="verve-logo"
 							/>
 							<img
-								className="w-[30%] md:w-full"
+								className="w-[50%] md:w-[40%]"
 								src={Mastercard}
 								alt="mastercard-logo"
 							/>
 							<img
 								src={Visa}
 								alt="visa-logo"
-								className="w-[30%] md:w-full pr-10 md:pr-[8.875rem]"
+								className="w-[50%] md:w-[60%] pr-10 md:pr-10"
 							/>
 						</div>
 					</Marquee>
