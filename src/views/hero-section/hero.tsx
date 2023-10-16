@@ -11,6 +11,8 @@ import "react-slideshow-image/dist/styles.css";
 const HeroSection: React.FC = () => {
 	const heroImages = [HeroImage1, HeroImage2, HeroImage3];
 
+	const createAccount = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
+
 	return (
 		<section className="relative flex items-center min-h-screen font-grotesk bg-hero bg-no-repeat bg-cover border-b-2 border-b-[#F2F4F6]">
 			<div className="container grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-8 gap-16">
@@ -36,7 +38,7 @@ const HeroSection: React.FC = () => {
 							payments, ensuring you get paid securely from across the globe.
 						</p>
 						<div>
-							<Link to="https://merchant.portal.redpay.africa/signup">
+							<Link to={createAccount}>
 								<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-primary rounded text-secondary-200 hover:bg-opacity-80">
 									Create an account
 								</Button>

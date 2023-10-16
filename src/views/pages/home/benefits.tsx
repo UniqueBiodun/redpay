@@ -193,7 +193,7 @@ const Benefits: React.FC = () => {
 							}`}
 						>
 							Expand your business with seamless{" "}
-							<span className="text-primary">integration</span>magic
+							<span className="text-primary">integration</span> magic
 						</p>
 						<p
 							className={`pt-2 pb-[2.5rem] text-secondary-300 text-base w-full ${

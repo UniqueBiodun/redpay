@@ -46,9 +46,7 @@ const Footer: React.FC = () => {
 					</div>
 					<div className="flex flex-col md:pr-[6.2rem]">
 						<div>
-							<p>
-								A product of Redtech Limited, a subsidiary of Heirs Holdings
-							</p>
+							<p>A product of Redtech Limited, a member of Heirs Holdings</p>
 						</div>
 						<div className="flex flex-row gap-[7.5rem] flex-wrap pt-14 pb-20">
 							<div className="flex flex-col gap-6">

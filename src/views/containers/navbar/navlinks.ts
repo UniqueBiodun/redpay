@@ -4,11 +4,11 @@ export const navlinks = [
 		url: "#",
 		target: "",
 	},
-	{
-		title: "Partners",
-		url: "#",
-		target: "",
-	},
+	// {
+	// 	title: "Partners",
+	// 	url: "#",
+	// 	target: "",
+	// },
 	{
 		title: "Pricing",
 		url: "#",
