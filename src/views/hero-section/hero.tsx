@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
 	const createAccount = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
 
 	return (
-		<section className="relative flex items-center min-h-screen font-grotesk bg-hero bg-no-repeat bg-cover border-b-2 border-b-[#F2F4F6]">
+		<section className="relative flex items-center min-h-screen font-grotesk bg-hero bg-no-repeat lg:pt-8 bg-cover border-b-2 border-b-[#F2F4F6]">
 			<div className="container grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-8 gap-16">
 				<div className="w-full h-full pt-28 lg:pt-0 flex items-center">
 					<div>
