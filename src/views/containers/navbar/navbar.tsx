@@ -19,7 +19,6 @@ const NavBar = () => {
 	const signUpUrl = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
 	const signInUrl = import.meta.env.VITE_APP_MERCHANT_SIGNIN;
 
-
 	window.addEventListener("scroll", changeColor);
 
 	useEffect(() => {
@@ -59,8 +58,6 @@ const NavBar = () => {
 			))}
 		</div>
 	);
-
-	// backdrop-filter-none
 
 	return (
 		<Navbar

@@ -21,7 +21,7 @@ const SubSection: React.FC<TextImgContainerProps> = ({
 			once: false, // Only run the animation once
 		});
 	}, []);
-	// bg-secondary-200
+
 	return (
 		<>
 			<section

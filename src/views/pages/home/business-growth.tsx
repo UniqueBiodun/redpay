@@ -3,6 +3,8 @@ import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
 const BusinessGrowth: React.FC = () => {
+	const signUpUrl = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
+
 	return (
 		<>
 			<section className="w-full bg-[#000] bg-sectionBg bg-center bg-cover bg-no-repeat h-2/4 text-secondary-100 text-base font-grotesk">
@@ -19,7 +21,7 @@ const BusinessGrowth: React.FC = () => {
 							embraced the future of seamless & secure transactions.
 						</p>
 						<div>
-							<Link to="https://merchant.portal.redpay.africa/signup">
+							<Link to={signUpUrl}>
 								<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-secondary-200 text-primary rounded hover:bg-opacity-80">
 									Create an account
 								</Button>

@@ -16,7 +16,6 @@ import HeirsGeneral from "../../../assets/icons/heirs-general-logo.svg";
 import Verve from "../../../assets/icons/verve-logo.png";
 import Mastercard from "../../../assets/icons/mastercard-logo.png";
 import Visa from "../../../assets/icons/visa-logo.png";
-// import Testimonials from "./testimonials";
 import BusinessGrowth from "./business-growth";
 import Benefits from "./benefits";
 import StepByStep from "./step-by-step";
@@ -28,7 +27,6 @@ const Home: React.FC = () => {
 			<SubSection
 				firstDiv={
 					<>
-						{/* flex flex-row */}
 						<div className="grid grid-cols-2 gap-3 lg:gap-6">
 							<div className="flex flex-col gap-6">
 								<div className="flex gap-2 items-center">
@@ -137,43 +135,6 @@ const Home: React.FC = () => {
 			</section>
 			<BusinessGrowth />
 			<StepByStep />
-			{/* <SubSection
-				firstDiv={
-					<>
-						<div className="flex flex-col gap-8">
-							<div className="flex flex-row justify-between items-center gap-12">
-								<div className="">
-									<img src={HeirsLife} alt="heirs-icon" />
-								</div>
-								<div className="">
-									<img src={Tenoil} alt="tenoil-icon" />
-								</div>
-								<div className="">
-									<img src={AfricaPrudence} alt="africaprudence-icon" />
-								</div>
-							</div>
-							<div className="flex flex-row justify-between items-center gap-12">
-								<div className="">
-									<img src={Uba} alt="uba-icon" />
-								</div>
-								<div className="">
-									<img src={HeirsGeneral} alt="heirsgeneral-icon" />
-								</div>
-								<div className="">
-									<img src={Kuda} alt="kuda-icon" />
-								</div>
-							</div>
-						</div>
-					</>
-				}
-				secondDiv={
-					<>
-						List of <span className="text-primary">Brands</span> that have trust
-						in RedPay
-					</>
-				}
-			/> */}
-			{/* <Testimonials /> */}
 			<Prefooter />
 		</>
 	);

@@ -6,6 +6,8 @@ import PrefooterImage from "../../assets/images/prefooter-image.png";
 import { Link } from "react-router-dom";
 
 const Prefooter: React.FC = () => {
+	const signUpUrl = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
+
 	const [ref, inView] = useInView({
 		threshold: 0.1,
 	});
@@ -44,7 +46,7 @@ const Prefooter: React.FC = () => {
 							Empower your business for boundless opportunities!
 						</p>
 						<div>
-							<Link to="https://merchant.portal.redpay.africa/signup">
+							<Link to={signUpUrl}>
 								<Button className="font-grotesk normal-case text-base font-medium shadow-none outline-0 bg-secondary-200 text-primary rounded hover:bg-opacity-80">
 									Create an account
 								</Button>
