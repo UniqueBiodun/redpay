@@ -17,9 +17,8 @@ const NavBar = () => {
 	};
 
 	const signUpUrl = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
+	const signInUrl = import.meta.env.VITE_APP_MERCHANT_SIGNIN;
 
-	console.log("Env", signUpUrl);
-	console.log("EnvMain", import.meta.env);
 
 	window.addEventListener("scroll", changeColor);
 
@@ -83,7 +82,7 @@ const NavBar = () => {
 				<div className="hidden lg:inline-block">{navList}</div>
 
 				<div className="hidden lg:flex items-center gap-4">
-					<Link to={signUpUrl}>
+					<Link to={signInUrl}>
 						<Button className="font-lato normal-case lg:py-2 lg:px-3 2xl:py-[14px] 2xl:px-8 text-base font-medium bg-transparent text-primary shadow-none outline-0 border border-primary rounded">
 							Sign In
 						</Button>
@@ -109,7 +108,7 @@ const NavBar = () => {
 			>
 				{navList}
 				<div className="flex flex-col gap-10 px-[5.25rem] pb-60">
-					<Link to={signUpUrl}>
+					<Link to={signInUrl}>
 						<Button className="normal-case font-grotesk lg:py-2 lg:px-3 2xl:py-[14px] 2xl:px-8 text-base font-medium bg-transparent text-primary shadow-none outline-0 border border-primary rounded">
 							Sign In
 						</Button>
