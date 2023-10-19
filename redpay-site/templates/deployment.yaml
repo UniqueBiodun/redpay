@@ -34,19 +34,19 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-          - name: VITE_APP_MERCHANT_SIGNUP                                  
+          - name: REACT_APP_MERCHANT_SIGNUP                                  
             valueFrom:                 
               configMapKeyRef:
                 name: dev-urls        
                 key: REACT_APP_MERCHANT_SIGNUP
                 optional: false
-          - name: VITE_APP_MERCHANT_SIGNIN
+          - name: REACT_APP_MERCHANT_SIGNIN
             valueFrom:
               configMapKeyRef:
                 name: dev-urls
                 key: REACT_APP_MERCHANT_SIGNIN
                 optional: false
-          - name: VITE_APP_ADMIN_URL
+          - name: REACT_APP_ADMIN_URL
             valueFrom:
               configMapKeyRef:
                 name: dev-urls
