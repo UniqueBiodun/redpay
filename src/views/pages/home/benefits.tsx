@@ -248,6 +248,7 @@ const Benefits: React.FC = () => {
 				</div>
 				<div className="hidden lg:inline-block w-full h-full">
 					<img
+						className="shadow-2xl"
 						src={imageSrc}
 						alt=""
 					/>
