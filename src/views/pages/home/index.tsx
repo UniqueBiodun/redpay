@@ -17,8 +17,9 @@ import Verve from "../../../assets/icons/verve-logo.png";
 import Mastercard from "../../../assets/icons/mastercard-logo.png";
 import Visa from "../../../assets/icons/visa-logo.png";
 import BusinessGrowth from "./business-growth";
-import Benefits from "./benefits";
+// import Benefits from "./benefits";
 import StepByStep from "./step-by-step";
+import BenefitsNew from "./benefits-new";
 
 const Home: React.FC = () => {
 	return (
@@ -84,8 +85,8 @@ const Home: React.FC = () => {
 					</>
 				}
 			/>
-			{/* <BenefitsNew /> */}
-			<Benefits />
+			<BenefitsNew />
+			{/* <Benefits /> */}
 
 			<section className="w-full border-t border-t-[#E1E1E1] bg-[#FAFAFA] py-8 md:py-[3.375rem] font-grotesk">
 				<div className="container px-4 lg:px-[10rem]">
