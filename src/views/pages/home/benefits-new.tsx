@@ -30,7 +30,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl shadow-indigo-200/90 w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg1}
 									alt=""
 								/>
@@ -44,7 +44,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg2}
 									alt=""
 								/>
@@ -58,7 +58,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg3}
 									alt=""
 								/>
@@ -72,7 +72,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg4}
 									alt=""
 								/>
@@ -86,7 +86,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg5}
 									alt=""
 								/>
@@ -100,7 +100,7 @@ const BenefitsNew: React.FC = () => {
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg6}
 									alt=""
 								/>
