@@ -19,15 +19,18 @@ const BenefitsNew: React.FC = () => {
 				className="3xl:mx-auto"
 				pages={6}
 			>
-				<>
+				<div>
 					<ParallaxLayer
 						sticky={{ start: 0, end: 0 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
+						style={{
+							...alignCenter,
+							justifyContent: "flex-end",
+						}}
 					>
 						<div>
 							<div className="hidden lg:flex lg:justify-end w-full h-full">
 								<img
-									className="shadow-2xl w-[80%] lg:w-[70%] 2xl:w-full"
+									className="shadow-2xl shadow-indigo-200/90 w-[80%] lg:w-[70%] 2xl:w-full"
 									src={BenefitsImg1}
 									alt=""
 								/>
@@ -35,7 +38,7 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						sticky={{ start: 1 }}
+						sticky={{ start: 1.05, end: 1.05 }}
 						style={{ ...alignCenter, justifyContent: "flex-end" }}
 					>
 						<div>
@@ -49,7 +52,7 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						sticky={{ start: 2 }}
+						sticky={{ start: 2.05, end: 2.05 }}
 						style={{ ...alignCenter, justifyContent: "flex-end" }}
 					>
 						<div>
@@ -63,7 +66,7 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						sticky={{ start: 3 }}
+						sticky={{ start: 3.05, end: 3.05 }}
 						style={{ ...alignCenter, justifyContent: "flex-end" }}
 					>
 						<div>
@@ -77,7 +80,7 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						sticky={{ start: 4 }}
+						sticky={{ start: 4.05, end: 4.05 }}
 						style={{ ...alignCenter, justifyContent: "flex-end" }}
 					>
 						<div>
@@ -91,7 +94,7 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						sticky={{ start: 5 }}
+						sticky={{ start: 5.03, end: 5.03 }}
 						style={{ ...alignCenter, justifyContent: "flex-end" }}
 					>
 						<div>
@@ -104,12 +107,12 @@ const BenefitsNew: React.FC = () => {
 							</div>
 						</div>
 					</ParallaxLayer>
-				</>
+				</div>
 
 				<div>
 					<ParallaxLayer
 						offset={0}
-						speed={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
@@ -140,8 +143,8 @@ const BenefitsNew: React.FC = () => {
 						</div>
 					</ParallaxLayer>
 					<ParallaxLayer
-						offset={1}
-						speed={1.0}
+						offset={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
@@ -170,7 +173,7 @@ const BenefitsNew: React.FC = () => {
 					</ParallaxLayer>
 					<ParallaxLayer
 						offset={2}
-						speed={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
@@ -201,7 +204,7 @@ const BenefitsNew: React.FC = () => {
 					</ParallaxLayer>
 					<ParallaxLayer
 						offset={3}
-						speed={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
@@ -234,7 +237,7 @@ const BenefitsNew: React.FC = () => {
 					</ParallaxLayer>
 					<ParallaxLayer
 						offset={4}
-						speed={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
@@ -265,7 +268,7 @@ const BenefitsNew: React.FC = () => {
 					</ParallaxLayer>
 					<ParallaxLayer
 						offset={5}
-						speed={1.0}
+						speed={0}
 						style={{ ...alignCenter, justifyContent: "flex-start" }}
 					>
 						<div className={`${styles.card} ${styles.parallax}`}>
