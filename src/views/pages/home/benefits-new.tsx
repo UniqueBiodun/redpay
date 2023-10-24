@@ -16,98 +16,96 @@ const BenefitsNew: React.FC = () => {
 	return (
 		<section className="w-full flex min-h-[100vh] items-center font-grotesk bg-benefitBg bg-no-repeat bg-cover">
 			<Parallax
-				className="3xl:mx-auto"
+				className="3xl:mx-auto scrollbar-hide"
 				pages={6}
 			>
-				<div>
-					<ParallaxLayer
-						sticky={{ start: 0, end: 0 }}
-						style={{
-							...alignCenter,
-							justifyContent: "flex-end",
-						}}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg1}
-									alt=""
-								/>
-							</div>
+				<ParallaxLayer
+					sticky={{ start: 0 }}
+					style={{
+						...alignCenter,
+						justifyContent: "flex-end",
+					}}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg1}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-					<ParallaxLayer
-						sticky={{ start: 1.05, end: 1.05 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg2}
-									alt=""
-								/>
-							</div>
+					</div>
+				</ParallaxLayer>
+				<ParallaxLayer
+					sticky={{ start: 1.05 }}
+					style={{ ...alignCenter, justifyContent: "flex-end" }}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg2}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-					<ParallaxLayer
-						sticky={{ start: 2.05, end: 2.05 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg3}
-									alt=""
-								/>
-							</div>
+					</div>
+				</ParallaxLayer>
+				<ParallaxLayer
+					sticky={{ start: 2 }}
+					style={{ ...alignCenter, justifyContent: "flex-end" }}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg3}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-					<ParallaxLayer
-						sticky={{ start: 3.05, end: 3.05 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg4}
-									alt=""
-								/>
-							</div>
+					</div>
+				</ParallaxLayer>
+				<ParallaxLayer
+					sticky={{ start: 3 }}
+					style={{ ...alignCenter, justifyContent: "flex-end" }}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg4}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-					<ParallaxLayer
-						sticky={{ start: 4.05, end: 4.05 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg5}
-									alt=""
-								/>
-							</div>
+					</div>
+				</ParallaxLayer>
+				<ParallaxLayer
+					sticky={{ start: 4 }}
+					style={{ ...alignCenter, justifyContent: "flex-end" }}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg5}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-					<ParallaxLayer
-						sticky={{ start: 5.03, end: 5.03 }}
-						style={{ ...alignCenter, justifyContent: "flex-end" }}
-					>
-						<div>
-							<div className="hidden lg:flex lg:justify-end w-full h-full">
-								<img
-									className="shadow-2xl shadow-indigo-500/90 w-[80%] lg:w-[70%] 2xl:w-full"
-									src={BenefitsImg6}
-									alt=""
-								/>
-							</div>
+					</div>
+				</ParallaxLayer>
+				<ParallaxLayer
+					sticky={{ start: 5 }}
+					style={{ ...alignCenter, justifyContent: "flex-end" }}
+				>
+					<div>
+						<div className="hidden lg:flex lg:justify-end w-full h-full">
+							<img
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
+								src={BenefitsImg6}
+								alt=""
+							/>
 						</div>
-					</ParallaxLayer>
-				</div>
+					</div>
+				</ParallaxLayer>
 
 				<div>
 					<ParallaxLayer
