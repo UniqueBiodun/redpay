@@ -29,7 +29,7 @@ const BenefitsNew: React.FC = () => {
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="!shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg1}
 								alt=""
 							/>
@@ -37,13 +37,13 @@ const BenefitsNew: React.FC = () => {
 					</div>
 				</ParallaxLayer>
 				<ParallaxLayer
-					sticky={{ start: 1 }}
+					sticky={{ start: 1.05 }}
 					style={{ ...alignCenter, justifyContent: "flex-end" }}
 				>
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg2}
 								alt=""
 							/>
@@ -57,7 +57,7 @@ const BenefitsNew: React.FC = () => {
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg3}
 								alt=""
 							/>
@@ -71,7 +71,7 @@ const BenefitsNew: React.FC = () => {
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg4}
 								alt=""
 							/>
@@ -85,7 +85,7 @@ const BenefitsNew: React.FC = () => {
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg5}
 								alt=""
 							/>
@@ -99,7 +99,7 @@ const BenefitsNew: React.FC = () => {
 					<div>
 						<div className="hidden lg:flex lg:justify-end w-full h-full">
 							<img
-								className="!shadow-custom w-[80%] lg:w-[70%] 2xl:w-full"
+								className="shadow-3xl w-[80%] lg:w-[70%] 2xl:w-full"
 								src={BenefitsImg6}
 								alt=""
 							/>
