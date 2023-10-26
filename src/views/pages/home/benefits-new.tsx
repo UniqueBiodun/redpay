@@ -37,7 +37,7 @@ const BenefitsNew: React.FC = () => {
 		<div>
 			{isMobile ? (
 				<section className="w-full flex min-h-[90vh] items-center font-grotesk bg-benefitBg bg-no-repeat bg-cover">
-					<div className="3xl:container py-10 md:py-0 px-4 lg:px-0 flex flex-col lg:pl-[10.8rem] lg:flex-row justify-between items-center gap-16">
+					<div className="container py-10 md:py-0 px-4 lg:px-0 flex flex-col lg:pl-[10.8rem] lg:flex-row justify-between items-center gap-16">
 						<div className="w-full lg:h-[680px] flex flex-col gap-16 lg:gap-64 lg:py-64 lg:overflow-auto lg:scrollbar-hide">
 							<div className="w-full">
 								<p
