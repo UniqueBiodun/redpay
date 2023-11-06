@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 
 interface TextImgContainerProps {
 	addStyle?: string;
+	gridOrder?: string;
 	firstDiv?: ReactNode;
 	secondDiv?: ReactNode;
 }
@@ -10,6 +11,7 @@ const PaymentShare: React.FC<TextImgContainerProps> = ({
 	addStyle,
 	firstDiv,
 	secondDiv,
+	gridOrder,
 }: TextImgContainerProps) => {
 	return (
 		<>
@@ -17,10 +19,10 @@ const PaymentShare: React.FC<TextImgContainerProps> = ({
 				className={`min-h-[35vh] ${addStyle} pt-10 pb-[3.75rem] font-grotesk flex items-center`}
 			>
 				<div
-					className={`container lg:pl-32 lg:pr-32 h-full w-full flex flex-col justify-between gap-10`}
+					className={`container lg:pl-32 lg:pr-32 grid grid-cols-2 items-end gap-6`}
 				>
 					{/* First Div */}
-					<div className="lg:w-[50%]">
+					<div className={`${gridOrder}`}>
 						<div className="text-secondary-400">{firstDiv}</div>
 					</div>
 
