@@ -19,7 +19,7 @@ const PaymentShare: React.FC<TextImgContainerProps> = ({
 				className={`min-h-[35vh] ${addStyle} pt-10 pb-[3.75rem] font-grotesk flex items-center`}
 			>
 				<div
-					className={`container lg:pl-32 lg:pr-32 grid grid-cols-2 items-end gap-6`}
+					className={`container lg:pl-32 lg:pr-32 grid grid-cols-1 lg:grid-cols-2 items-end gap-6`}
 				>
 					{/* First Div */}
 					<div className={`${gridOrder}`}>
