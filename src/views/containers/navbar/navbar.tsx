@@ -12,8 +12,28 @@ const NavBar = () => {
 
 	const [color, setColor] = useState(false);
 
+	// const changeColor = () => {
+	// 	window.scrollY >= 10 ? setColor(true) : setColor(false);
+	// };
+
 	const changeColor = () => {
-		window.scrollY >= 10 ? setColor(true) : setColor(false);
+		if (location.pathname === "/" && window.scrollY >= 10) {
+			setColor(true);
+		} else if (location.pathname === "/features") {
+			setColor(true);
+		} else if (location.pathname === "/first-timer") {
+			setColor(true);
+		} else if (location.pathname === "/pray") {
+			setColor(true);
+		} else if (location.pathname === "/give") {
+			setColor(true);
+		} else if (location.pathname === "/contact") {
+			setColor(true);
+		} else if (location.pathname === "/hgh-i") {
+			setColor(true);
+		} else {
+			setColor(false);
+		}
 	};
 
 	const signUpUrl = import.meta.env.VITE_APP_MERCHANT_SIGNUP;
@@ -61,7 +81,7 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className={`z-10 h-20 py-3 px-0 mx-0 fixed font-grotesk rounded-none w-full max-w-none border-0 shadow-none  ${
+			className={`z-10 h-20 py-3 px-0 mx-0 fixed top-0 left-0 right-0 font-grotesk rounded-none w-full max-w-none border-0 shadow-none  ${
 				color ? "shadow-sm !bg-white backdrop-filter-none" : "bg-transparent"
 			}
             `}

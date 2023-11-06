@@ -1,7 +1,7 @@
 export const navlinks = [
 	{
-		title: "Company",
-		url: "#",
+		title: "Features",
+		url: "/features",
 		target: "",
 	},
 	{

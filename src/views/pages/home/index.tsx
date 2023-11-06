@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import HeroSection from "../../hero-section/hero";
 import Prefooter from "../../prefooter/Prefooter";
-import SubSection from "../../components/security-brand.tsx/subsection";
+import SubSection from "../../components/security-brand/subsection";
 import LockIcon from "../../../assets/icons/lock-icon.svg";
 import MultiFactorIcon from "../../../assets/icons/mfa-icon.svg";
 import FraudIcon from "../../../assets/icons/fraud-icon.svg";

@@ -32,6 +32,7 @@ module.exports = withMT({
 					100: "#E1E5EA",
 					200: "#E1E1E1",
 					300: "#D6D6D6",
+					400: "#F5F5F5",
 				},
 			},
 		},

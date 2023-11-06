@@ -3,6 +3,7 @@ import Navbar from "./views/containers/navbar/navbar";
 import Home from "./views/pages/home";
 import Footer from "./views/containers/footer/footer";
 import Company from "./views/pages/company";
+import Features from "./views/pages/features";
 
 function App() {
 	return (
@@ -16,6 +17,10 @@ function App() {
 				<Route
 					path="/company"
 					element={<Company />}
+				/>
+				<Route
+					path="/features"
+					element={<Features />}
 				/>
 				<Route
 					path="*"
