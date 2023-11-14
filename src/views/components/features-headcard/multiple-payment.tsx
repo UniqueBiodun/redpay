@@ -4,24 +4,26 @@ interface TextImgContainerProps {
 	addStyle?: string;
 	firstDiv?: ReactNode;
 	secondDiv?: ReactNode;
+	emptyDiv?: ReactNode;
 }
 
-const PaymentFeatures: React.FC<TextImgContainerProps> = ({
+const MultiplePayment: React.FC<TextImgContainerProps> = ({
 	addStyle,
 	firstDiv,
 	secondDiv,
+	emptyDiv,
 }: TextImgContainerProps) => {
 	return (
 		<>
 			<section
-				className={`min-h-[35vh] ${addStyle} py-10 font-grotesk flex items-center`}
+				className={`min-h-[35vh] ${addStyle} pt-10 pb-[3.75rem] font-grotesk flex items-center`}
 			>
-				<div className={`h-full w-full flex flex-col justify-between gap-10`}>
+				<div className={`container lg:pl-32 lg:pr-32 flex flex-col gap-6`}>
 					{/* First Div */}
-					<div>
-						<div className="container lg:grid lg:grid-cols-2 text-secondary-400">
-							{firstDiv}
-						</div>
+
+					<div className={`text-secondary-400 grid grid-cols-1 lg:grid-cols-2`}>
+						{emptyDiv}
+						{firstDiv}
 					</div>
 
 					{/* Second Div */}
@@ -34,4 +36,4 @@ const PaymentFeatures: React.FC<TextImgContainerProps> = ({
 	);
 };
 
-export default PaymentFeatures;
+export default MultiplePayment;
