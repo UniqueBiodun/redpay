@@ -21,15 +21,9 @@ const NavBar = () => {
 			setColor(true);
 		} else if (location.pathname === "/features") {
 			setColor(true);
-		} else if (location.pathname === "/first-timer") {
+		} else if (location.pathname === "/faqs") {
 			setColor(true);
-		} else if (location.pathname === "/pray") {
-			setColor(true);
-		} else if (location.pathname === "/give") {
-			setColor(true);
-		} else if (location.pathname === "/contact") {
-			setColor(true);
-		} else if (location.pathname === "/hgh-i") {
+		} else if (location.pathname === "/resources") {
 			setColor(true);
 		} else {
 			setColor(false);
@@ -61,11 +55,7 @@ const NavBar = () => {
 							className="hover:text-primary"
 							to={link.url}
 						>
-							{link.title === "FAQs" ? (
-								<span className="flex items-center">
-									{link.title} <FiChevronDown />
-								</span>
-							) : link.title === "Resources" ? (
+							{link.title === "Resources" ? (
 								<span className="flex items-center">
 									{link.title} <FiChevronDown />
 								</span>

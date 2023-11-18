@@ -5,18 +5,8 @@ export const navlinks = [
 		target: "",
 	},
 	{
-		title: "Partners",
-		url: "#",
-		target: "",
-	},
-	// {
-	// 	title: "Pricing",
-	// 	url: "#",
-	// 	target: "",
-	// },
-	{
 		title: "FAQs",
-		url: "#",
+		url: "/faqs",
 		target: "",
 	},
 	{
