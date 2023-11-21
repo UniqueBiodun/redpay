@@ -1,20 +1,80 @@
-import { useState, useEffect } from "react";
-import { Navbar, Button, MobileNav } from "@material-tailwind/react";
+import React, { useState, useEffect } from "react";
+import {
+	Navbar,
+	Button,
+	MobileNav,
+	MenuItem,
+	Typography,
+	Menu,
+	MenuHandler,
+	MenuList,
+} from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
 import RedTechLogo from "../../../assets/brand-logo/redpay-logo.svg";
 import { FiChevronDown } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { navlinks } from "./navlinks";
+import { navlinks, resources } from "./navlinks";
+
+function Resources() {
+	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+	const renderItems = resources.map(({ title, link }) => (
+		<NavLink
+			to={link}
+			key={title}
+		>
+			<MenuItem>
+				<Typography className="mb-1 font-grotesk text-base text-secondary-100 hover:text-primary">
+					{title}
+				</Typography>
+			</MenuItem>
+		</NavLink>
+	));
+
+	return (
+		<React.Fragment>
+			<Menu
+				allowHover
+				open={isMenuOpen}
+				handler={setIsMenuOpen}
+			>
+				<MenuHandler>
+					<Typography
+						as="h6"
+						variant="small"
+						className="font-normal"
+					>
+						<MenuItem className="hidden hover:text-primary outline-none border-0 text-base font-grotesk text-secondary-100 items-center gap-2 font-medium lg:flex lg:rounded-full">
+							Resources{" "}
+							<FiChevronDown
+								className={`text-lg transition-transform ${
+									isMenuOpen ? "rotate-180" : ""
+								}`}
+							/>
+						</MenuItem>
+					</Typography>
+				</MenuHandler>
+				<MenuList className="hidden w-[12rem] lg:grid">
+					<ul className="col-span-4 flex w-full flex-col gap-1 outline-0">
+						{renderItems}
+					</ul>
+				</MenuList>
+			</Menu>
+			<MenuItem className="flex px-0 pt-10 items-center gap-2 font-medium text-secondary-100 lg:hidden">
+				Resources{" "}
+			</MenuItem>
+			<ul className="ml-4 flex w-full flex-col gap-1 lg:hidden">
+				{renderItems}
+			</ul>
+		</React.Fragment>
+	);
+}
 
 const NavBar = () => {
 	const [openNav, setOpenNav] = useState(false);
 
 	const [color, setColor] = useState(false);
-
-	// const changeColor = () => {
-	// 	window.scrollY >= 10 ? setColor(true) : setColor(false);
-	// };
 
 	const changeColor = () => {
 		if (location.pathname === "/" && window.scrollY >= 10) {
@@ -47,29 +107,25 @@ const NavBar = () => {
 	}, []);
 
 	const navList = (
-		<div className="text-base flex flex-col lg:flex-row lg:items-center px-[6.25rem] lg:py-0 py-10 lg:px-0 lg:p-2 gap-10 lg:gap-4 2xl:gap-10 text-secondary-100 font-medium">
+		<div className="text-base flex flex-col lg:flex-row lg:items-center px-[5.25rem] lg:py-0 pb-10 lg:px-0 lg:p-2 lg:gap-4 2xl:gap-10 text-secondary-100 font-medium">
 			{/* Menu links here */}
 			{navlinks.map((link: any, index: number) => (
 				<ul
 					key={index}
 					className="list-none text-left lg:text-center"
 				>
-					<li>
+					<li className="pt-10 md:pt-0">
 						<NavLink
 							className="hover:text-primary"
 							to={link.url}
+							onClick={() => setOpenNav(!openNav)}
 						>
-							{link.title === "Resources" ? (
-								<span className="flex items-center">
-									{link.title} <FiChevronDown />
-								</span>
-							) : (
-								link.title // Render the title only for other links
-							)}
+							{link.title}
 						</NavLink>
 					</li>
 				</ul>
 			))}
+			<Resources />
 		</div>
 	);
 

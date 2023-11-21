@@ -24,7 +24,7 @@ export const DETAILS: Details[] = [
 		link: "#",
 	},
 	{
-		title: "2. Connect your account",
+		title: "Connect your account",
 		para: "We have a team of well-qualified staff that responds to you within 5-10 minutes of ask-time.",
 		button: "Get support",
 		image: ContactImage2,
