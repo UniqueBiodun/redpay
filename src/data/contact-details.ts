@@ -21,7 +21,7 @@ export const DETAILS: Details[] = [
 		button: "Get support",
 		image: ContactImage1,
 		alt: "help-icon",
-		link: "",
+		link: "#",
 	},
 	{
 		title: "2. Connect your account",
@@ -29,7 +29,7 @@ export const DETAILS: Details[] = [
 		button: "Get support",
 		image: ContactImage2,
 		alt: "get-support-icon",
-		link: "",
+		link: "#",
 	},
 	{
 		title: "Send Us a message",
@@ -37,7 +37,7 @@ export const DETAILS: Details[] = [
 		button: "Send an email",
 		image: ContactImage3,
 		alt: "send-an-email-icon",
-		link: "",
+		link: "#",
 	},
 	{
 		title: "Documentation",
@@ -45,7 +45,7 @@ export const DETAILS: Details[] = [
 		button: "View",
 		image: ContactImage4,
 		alt: "documentation-icon",
-		link: "",
+		link: "#",
 	},
 	{
 		title: "Join the community",
@@ -53,7 +53,7 @@ export const DETAILS: Details[] = [
 		button: "Subscribe",
 		image: ContactImage5,
 		alt: "subscribe-icon",
-		link: "",
+		link: "#",
 	},
 	{
 		title: "Developers",
@@ -61,6 +61,6 @@ export const DETAILS: Details[] = [
 		button: "Send an email",
 		image: ContactImage6,
 		alt: "developers-icon",
-		link: "",
+		link: "#",
 	},
 ];

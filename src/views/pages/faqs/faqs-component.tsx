@@ -84,7 +84,7 @@ const FaqComponent: React.FC = () => {
 							<p className="text-base text-center font-medium text-secondary-100">
 								Can’t find the answer you are looking for?
 							</p>
-							<Link to="">
+							<Link to="/contact-us">
 								<Button
 									variant="text"
 									className="font-grotesk text-base font-medium flex items-center gap-2 capitalize text-secondary-200 bg-primary rounded hover:bg-secondary-300"
