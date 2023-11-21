@@ -23,6 +23,10 @@ const NavBar = () => {
 			setColor(true);
 		} else if (location.pathname === "/faqs") {
 			setColor(true);
+		} else if (location.pathname === "/support") {
+			setColor(true);
+		} else if (location.pathname === "/contact-us") {
+			setColor(true);
 		} else if (location.pathname === "/resources") {
 			setColor(true);
 		} else {

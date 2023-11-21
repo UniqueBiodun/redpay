@@ -16,7 +16,7 @@ export const navlinks = [
 	},
 	{
 		title: "Support",
-		url: "#",
+		url: "/support",
 		target: "",
 	},
 ];

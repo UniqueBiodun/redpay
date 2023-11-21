@@ -6,7 +6,7 @@ interface Steps {
 	title?: string;
 	para?: string;
 	image?: string;
-	link?: string;
+	link?: any;
 }
 
 export const steps: Steps[] = [

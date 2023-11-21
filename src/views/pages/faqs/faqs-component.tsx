@@ -37,7 +37,7 @@ const FaqComponent: React.FC = () => {
 
 	return (
 		<>
-			<section className="w-full py-6 lg:py-[3.75rem] bg-secondary-200 text-secondary-100 font-grotesk">
+			<section className="w-full py-6 lg:py-[3.75rem] lg:bg-faqBg lg:bg-no-repeat lg:bg-cover bg-secondary-200 text-secondary-100 font-grotesk">
 				<div className="container">
 					<div className="lg:px-[8rem] xl:px-[16.1875rem]">
 						<div>

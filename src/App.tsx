@@ -6,6 +6,7 @@ import Company from "./views/pages/company";
 import Features from "./views/pages/features";
 import ScrollToTop from "./helper/ScrollToTop";
 import Faqs from "./views/pages/faqs";
+import ContactSupport from "./views/pages/contact-support";
 
 function App() {
 	return (
@@ -28,6 +29,14 @@ function App() {
 				<Route
 					path="/faqs"
 					element={<Faqs />}
+				/>
+				<Route
+					path="/support"
+					element={<ContactSupport />}
+				/>
+				<Route
+					path="/contact-us"
+					element={<ContactSupport />}
 				/>
 				<Route
 					path="*"

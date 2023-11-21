@@ -33,6 +33,8 @@ module.exports = withMT({
 					200: "#E1E1E1",
 					300: "#D6D6D6",
 					400: "#F5F5F5",
+					500: "#FDFDFD",
+					600: "#121212",
 				},
 			},
 		},
@@ -58,6 +60,7 @@ module.exports = withMT({
 			heroRight: "url('/src/assets/images/dashed-bg.png')",
 			sectionBg: "url('/src/assets/icons/section-bg.png')",
 			benefitBg: "url('/src/assets/icons/benefits-bg.png')",
+			faqBg: "url('/src/assets/images/faq-bg.png')",
 			"custom-gradient":
 				"linear-gradient(90deg, #E21313 0%, rgba(22, 22, 22, 0.40) 100%)",
 			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

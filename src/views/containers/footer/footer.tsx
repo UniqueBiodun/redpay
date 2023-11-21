@@ -69,7 +69,9 @@ const Footer: React.FC = () => {
 							<div className="flex flex-col gap-6">
 								<p className="text-base font-semibold">Support</p>
 								<ul className="flex flex-col gap-4">
-									<li>Contact Us</li>
+									<li className="hover:text-primary">
+										<Link to="/contact-us">Contact Us</Link>
+									</li>
 									<li className="hover:text-primary">
 										<Link to="/faqs">FAQs</Link>
 									</li>
